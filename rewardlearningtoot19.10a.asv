@@ -1,0 +1,42 @@
+clear all
+
+% Load Behavioral data
+% 
+% 'C:\Users\benjamin.timberlake\Documents\MATLAB\rldemo\Sub4_Session1_20150519-0941.mat'
+
+% Load behavioral data from separate files into a matrix called 'alldata'
+files = dir('C:\Users\benjamin.timberlake\Documents\MATLAB\rldemo\*.mat');
+for i=1:length(files)
+    alldata(i) = load(['C:\Users\benjamin.timberlake\Documents\MATLAB\rldemo\' files(i).name]);
+end
+
+
+% Reorganize it
+% Extract statistics in meaningful way
+% Average win or total wins for diff subjects
+
+% TOTAL WINNINGS FOR EACH SUBJECT (ALL THREE SESSIONS)
+
+get(alldata)
+for j=subject(4:6)
+allWinnings(j) = sum(TotalPayoff(session(1:3))
+
+% Do subjects Learn more as time goes on?
+% What is the average rt for one subject
+%    - for all subjects?
+
+% Do supjects get faster or slower
+
+
+% Avg rt ea subject after win vs loss
+%       Why is this important?
+
+
+% Reaction time relative to potential or previous reward?
+% - as function of diff b/w the two probabilities
+% - faster decisions when easier vs harder choice
+
+
+% Familiarity with data organization
+% 
+% Which choices do subjects make
